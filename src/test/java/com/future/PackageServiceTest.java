@@ -17,7 +17,7 @@ public class PackageServiceTest extends DesignPatternApplicationTests {
 
     @Test
     void testPackageService() {
-        packageService.deliverInfo((byte) 1);
+        packageService.deliverInfo();
     }
 
 }

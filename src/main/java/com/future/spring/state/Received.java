@@ -18,6 +18,6 @@ public class Received implements PackageState {
 
     @Override
     public void updateState(PackageContext ctx) {
-        System.out.println("已签收 流程结束!" + ctx.getPackageId());
+        System.out.println("已签收 流程结束! 单号: " + ctx.getPackageId());
     }
 }

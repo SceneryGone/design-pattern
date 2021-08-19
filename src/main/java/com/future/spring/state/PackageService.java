@@ -15,7 +15,7 @@ public class PackageService {
     @Autowired
     private Acknowledged acknowledged;
 
-    public void deliverInfo(Byte packageStatus) {
+    public void deliverInfo() {
         final PackageContext context = new PackageContext(acknowledged, "1001");
         for (int i = 0; i < PackageEnum.values().length; i++) {
             context.update();
