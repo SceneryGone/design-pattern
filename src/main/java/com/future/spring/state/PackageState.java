@@ -1,0 +1,26 @@
+package com.future.spring.state;
+
+/**
+ * 功能描述:
+ *
+ * @author future
+ * @date 2021-08-19 17:35
+ */
+public interface PackageState {
+
+    PackageEnum getPackageEnum();
+
+    /**
+     * 定义了6种状态
+     * 1 - 已下单
+     * 2 - 仓库处理中
+     * 3 - 运输中
+     * 4 - 派送中
+     * 5 - 待取件
+     * 6 - 已签收
+     *
+     * @param ctx
+     */
+    void updateState(PackageContext ctx);
+
+}
